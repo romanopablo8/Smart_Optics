@@ -124,6 +124,166 @@ input {
    color: black;
 }
 
+
+
+*/  FOOTER */
+
+.footer-links {
+    
+
+}
+
+.footer-container {
+   background-color: black;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 10px;
+   align-items: flex-start;
+   justify-content: center;
+
+}
+
+.footer-container {
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.footer-container ul li {
+  line-height: 1.2;
+}
+
+.footer {
+    color: aqua;
+    font-size: 11px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer-container a {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+/* Estilo Login */
+
+
+
+.login-container {
+    height: 700px;
+    width: 750px;
+    margin: 6em auto;
+    border-radius:10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.login-info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    background-color: rgb(45, 46, 46);
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.image-container {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: #eadbff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 60px;
+    letter-spacing: 2px;
+    color: var(--title-bg);
+    padding-top: 40px;
+    padding-bottom:2px;
+}
+
+.social-login {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding-top: 35px;
+}
+
+.social-login-element {
+    width: 12.5rem;
+    height: 3.75rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-login-element img {
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    top: 0;
+    left: -0.625rem;
+}
+
+
+.social-login-element:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.login-info-container > p {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.inputs-container {
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input, .btn {
+    width: 80%;
+    height: 35px;
+    font-size: 20px;
+}
+
+.input {
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+.input:hover {
+    border: 2px solid var(--button-bg);
+}
+
+
+
 MEDIAS QUERIES
 
 
@@ -131,5 +291,34 @@ MEDIAS QUERIES
     .container, .class_nav { 
     display: flex;
     flex-direction:column; 
-    } 
+    }
+
+}
+
+
+@media (max-width:601px) {
+    .footer-links, .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        background-color: #1d1c1c;
+        padding: 80px;
+        gap: 30px;
+}
+}
+
+
+@media (max-width: 400px) {
+    .footer-links, .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        background-color: #1d1c1c;
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        gap: 5px;
+    }
 }
