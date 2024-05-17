@@ -20,6 +20,7 @@
 <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/ic/apple-icon-144x144.png">
 <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/ic/apple-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/ic/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="144x144" href="./assets/img/ic/android-icon-144x144.png">
 <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/ic/android-icon-192x192.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/ic/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/ic/favicon-96x96.png">
@@ -35,63 +36,62 @@
 <body>
     <header> 
  
-<!----------------------------->
-<nav class="navbar navbar-expand-lg bg-black">
-
-    <div class="container-fluid ">
-        <div>
+<!-------------Navbar search---------------->
+      <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid ">
+          <div>
             <a class="navbar-brand text-white txtShW "><img src="./assets/img/ic/logonav.png" ></a>           
-        </div>
-        
-        <div class="col-6">
-        <form class="d-flex text-white" role="search">
-            <input class="form-control me-2 p-3" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        </div>
-   
-        <div class="col-4">
-     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-     <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        
-         
-          <li class="nav-item dropdown">
-            <a class="text-white nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mi cuenta
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./login.html">Login</a></li>
-              <li><a class="dropdown-item" href="./registrar.html">Registrarse</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./carrito.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFF55"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
-                </a>
-          </li>
-        </ul>       
-     </div>   
-        </div>
-  </nav>
-
-
-<!------------------------------------------------------>      
-           
-          </nav>
-        <nav class="navbar navbar-light bg-black"> 
-        <div class="container-fluid">
-            
-                <a href="index.html"> Home  </a>
-                <a href="registro.html"> Registrarme  </a>
-                <a href="sucursales.html"> Sucursales  </a>
-                <a href="login.html"> LOGIN </a>
-                <a href="productos.html"> Productos </a>
-        
+          </div>
+          <div class="col-6">
+            <form class="d-flex text-white" role="search">
+              <input class="form-control me-2 p-3" id="search"  name="search" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" id="searchnavbar" type="submit">Search</button>
+            </form>
+          </div>
+          <div class="col-4">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item dropdown">
+                  <a class="text-white nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mi cuenta
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="./registro.html">Registrarse</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./carrito.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFF55"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a>
+                </li>
+              </ul>       
+              </div>   
+          </div>
+        </div>  
+      </nav>
+<!-------------------Navbar Home----------------------------------->      
+        <nav class=" bg-black"> 
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html"> Tienda </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html"> Contacto </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sucursales.html"> Sucursales  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
         </div>
         </nav>
     </header>
@@ -100,53 +100,75 @@
             <img src="./assets/img/BannerCanva.png"  style= "background-color: hsl(53, 87%, 69%); margin:auto;cursor: zoom-out; width: 100%; height: 60%">
         </div>
     </main>
-    <footer class="footer"> 
-        <div class="container">
-         <div class="footer-row"> 
+    <!------------------Footer-------------------->
+    <footer>
+    <div class="footer-links" id="pie">
+      <div class="footer-container">
+        <ul>
+          <li>
+            <a href="index.html"><h4>EMPRESA</h4></a>
+          </li>
+          <li>
+            <a href="#">NOSOTROS </a>
+          </li>
+          <li>
+            <a href="#">NUESTROS SERVICIOS</a>
+          </li>
+          <li>
+            <a href="#">FAQS</a>
+          </li>
+          <li>
+            <a href="#">SUMATE AL EQUIPO </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="productos.html"><h4> TIENDA </h4></a>
+          </li>
+          <li >
+            <h4 id="titulo-redes"> REDES SOCIALES </h4>
+            <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i></a>  
+            <a href="https://www.twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="contacto.html"><h4> AYUDA </h4></a>
+          </li>
+          <li>
+            <a href="#"> PREGUNTAS </a>
+          </li>
+          <li>
+            <a href="#"> ENVIOS  </a>
+          </li>
+          <li>
+            <a href="contacto.html"> CONSULTAS </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="./sucursales.html"><h4> SUCURSALES</h4></a>
+          </li>
+          <li>
+            <a href="./sucursal1.html"> Sucursal 1 </a>
+          </li>
+          <li>
+            <a href="./sucursal2.html"> Sucursal 2 </a>
+          </li>
+          <li>
+            <a href="./sucursal3.html"> Sucursal 3 </a>
+          </li>
+        </ul>
+       </div>
+   </div>
+   </footer>
 
-                <div class="footer-links">
-                    <h4> EMPRESA </h4>
-                    <ul>
-                        <li> <a href="#"> NOSOTROS </a> </li>
-                        <li> <a href="#"> NUESTROS SERVICIOS </a> </li>
-                        <li> <a href="#"> FAQs </a> </li>
-                        <li> <a href="#"> SUMATE AL EQUIPO </a> </li>
-                    </ul>
-                    
-                </div>
-                <div class="footer-links">
-                    <h4> AYUDA </h4>
-                    <ul>
-                        <li> <a href="#"> PREGUNTAS </a> </li>
-                        <li> <a href="#"> COMPRAS </a> </li>
-                        <li> <a href="#"> ENVIOS </a> </li>
-                        <li> <a href="#"> PAGO </a> </li>
-                    </ul>  
-                </div> 
-                <div class="footer-links">
-                    <h4> TIENDA </h4>
-                    <ul>
-                        <li> <a href="#"> GAFAS SMARTS </a> </li>
-                        <li> <a href="#"> LENTES DE SOL </a> </li>
-                        <li> <a href="#"> LENTES TEENS </a> </li>
-                        <li> <a href="#"> LENTERS HOMBRE </a> </li>
-                        <li> <a href="#"> LENTERS MUJERES </a> </li>
-                    </ul>
-                </div>   
-                <div class="footer-links">
-                    <h4> REDES SOCIALES </h4>
-                    <div class="social-links">
-                       <ul>
-                        <a href="https://wwww.facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://wwww.twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://wwww.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://wwww.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                       </ul>
-                    </div>
-                </div>  
-            </div>
-        </div>        
-  </footer>
+
+  <!------------------------------------------------------------------------------------------------->
+  <script src="./assets/js/main.js"></script>  
+   <script src="./assets/js/products.js"></script>  
  </body>
 
 </html>
