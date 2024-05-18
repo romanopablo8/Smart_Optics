@@ -164,9 +164,10 @@ body {
     align-items: center;
     text-align: center;
     padding-top: 0.5rem;
-    background-color: rgb(211, 201, 199);
+    background-color: #24303c;
     padding-left: 15px;
     padding-right: 15px;
+    color: white;
 
 }
 
