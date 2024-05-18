@@ -5,6 +5,7 @@ Planificar, elaborar, diseñar e implementar un ecommerce con las herramientas V
 Ciclo de vida se implemento Metodologia Scrum.
 el equipo de trabajo cuenta con 2 integrantes Fernandez Maria y Pablo Romano.
 Link de acceso:
+https://romanopablo8.github.io/Smart_Optics/
 
 
 
