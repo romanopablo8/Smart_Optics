@@ -131,6 +131,15 @@ body {
     color: black;
 }
 
+#redes-footer {
+    display:flex ;
+    flex-direction: row; 
+    align-content: center; 
+    justify-content: space-between; 
+    width:50%;
+
+}
+
 /* Estilo Login */
 
 
@@ -155,7 +164,7 @@ body {
     align-items: center;
     text-align: center;
     padding-top: 0.5rem;
-    background-color: rgb(45, 46, 46);
+    background-color: rgb(211, 201, 199);
     padding-left: 15px;
     padding-right: 15px;
 
@@ -238,7 +247,8 @@ body {
 .input, .btn {
     width: 80%;
     height: 35px;
-    font-size: 20px;
+    font-size: 15px;
+
 }
 
 .input {
@@ -353,8 +363,49 @@ body {
         padding-right: 5px;
         gap: 5px;
     }
-}
+    
+    #redes-footer {
+      width: 80%;
+    }
+    
+    .login-container {
+        width: 80%;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
 
+    }
+
+    .login-info-container {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .social-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+    
+    .form-register {
+        margin: 0;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       }
+    
+       .footer-links .footer-container {
+            grid-template-columns: 1fr;
+     }
+       
+     .image-container {
+        display: none;
+     }
+    
+}
 
 /*MEDIAS QUERIES*/
 
