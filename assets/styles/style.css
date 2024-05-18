@@ -11,7 +11,15 @@ body {
 
 }
 
-
+#boton-contacto{
+   
+    float:center;
+    cursor:pointer;
+    width: 50%;
+    height: 35px;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
 
 .container {
     display: flex;
@@ -26,8 +34,29 @@ body {
     padding: 100px 10px 100px 100px;
     align-items: center;    
 }
+/*carousel y cards*/
+.carousel-section img,
+.card-section img {
+    height: 50vh;
+    object-fit: cover;
+}
 
-
+.card-section img {
+    height: 30vh;
+   
+}
+.card-carrito {
+    height: 20vh;
+    object-fit: cover; 
+   
+}
+/* footer*/
+#pie {
+    width: 100%;
+    color: black; 
+    font-size: 18px;
+     padding:0;
+}
 .footer {
     background-color: #242628;
     padding: 15px;
@@ -116,6 +145,7 @@ body {
     overflow: hidden;
     margin-top: 25px;
     margin-bottom: 25px;
+
 }
 
 .login-info-container {
@@ -148,7 +178,11 @@ body {
     padding-top: 40px;
     padding-bottom:2px;
 }
-
+/*text area contacto */
+#exampleFormControlTextarea1{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
 .social-login {
     width: 100%;
     display: flex;
@@ -183,7 +217,9 @@ body {
     background-color: burlywood;
     cursor: pointer;
 }
-
+.h4 #titulo-redes{
+    text-decoration: whitesmoke;
+}
 .login-info-container > p {
     font-size: 20px;
     margin-top: 50px;
@@ -231,7 +267,8 @@ body {
     color: white;
     box-shadow: 7px 13px 37px #000;
     margin-bottom: 80px;
-    margin-left: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .form-register h4 {
@@ -282,13 +319,13 @@ body {
 
 
 
-MEDIAS QUERIES
+/*MEDIAS QUERIES*/
 
 
 @media (max-width:600px) {
     .container, .class_nav { 
-    display: flex;
-    flex-direction:column; 
+        display: flex;
+        flex-direction:column; 
 }
 }
 
@@ -317,3 +354,24 @@ MEDIAS QUERIES
         gap: 5px;
     }
 }
+
+
+/*MEDIAS QUERIES*/
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px)
+ {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { }
