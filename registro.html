@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
     
-    <title>Search | Smart Opticas</title>
+    <title>Registro</title>
  <!--Apis con jsons e Imagen de icon-->
 <!---------------------------------------------->
 <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/ic/apple-icon-57x57.png">
@@ -40,7 +40,7 @@
       <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid ">
           <div>
-            <a class="navbar-brand text-white txtShW "><img src="./assets/img/ic/logonav.png" ></a>           
+            <a class="navbar-brand text-white txtShW "><img src="./assets/img/ic/logonav.png" alt="" ></a>           
           </div>
           <div class="col-6">
             <form class="d-flex text-white" role="search">
@@ -61,8 +61,6 @@
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="./login.html">Login</a></li>
                     <li><a class="dropdown-item" href="./registro.html">Registrarse</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -75,6 +73,7 @@
       </nav>
 <!-------------------Navbar Home----------------------------------->      
         <nav class=" bg-black"> 
+          <div class="container-fluid ">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
@@ -88,9 +87,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="sucursales.html"> Sucursales  </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
               </ul>
         </div>
         </nav>
@@ -98,10 +94,10 @@
   <main>
     <section class="form-register">
       <h4>Formulario Registro</h4>
-      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-      <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required>
+      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido"required>
+      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo"required>
+      <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña"required>
       <h1 style="padding-bottom: 10px;"> Genero:</h1>
       <input type="radio" name="gender" value="Mujer" checked> Mujer
       <input type="radio" name="gender" value="Hombre"> Hombre
@@ -109,7 +105,7 @@
       
       <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
       
-      <input class="botons" type="submit" value="Registrar">
+      <button class="botons" type="submit" value="Registrar">Registrar</button>
       
       <p><a href="./login.html">¿Ya tengo Cuenta?</a></p>
     </section>
