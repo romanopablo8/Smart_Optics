@@ -29,6 +29,10 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<!----Fonts google -------->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <!---------------------------------------------->
 <script src="https://kit.fontawesome.com/548c939c5f.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -72,7 +76,8 @@
         </div>  
       </nav>
 <!-------------------Navbar Home----------------------------------->      
-        <nav class=" bg-black"> 
+        <nav class=" bg-black">
+          <div class="container-fluid "> 
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="index.html"> Home </a>
@@ -85,10 +90,7 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="sucursales.html"> Sucursales  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
+                </li>               
               </ul>
         </div>
         </nav>
@@ -96,20 +98,15 @@
 
         <section class="form-register">
           <h4>Contacto</h4>
+          <label for="inputPassword5" class="form-label">Nombre completo</label>
           <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-          <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-          <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-          <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-          <h1 style="padding-bottom: 10px;"> Genero:</h1>
-          <input type="radio" name="gender" value="Mujer" checked> Mujer
-          <input type="radio" name="gender" value="Hombre"> Hombre
-          <input type="radio" name="gender" value="Otro"> Otro
-          
-          <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-          
-          <input class="botons" type="submit" value="Registrar">
-          
-          <p><a href="./login.html">¿Ya tengo Cuenta?</a></p>
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input class="controls" type="email" name="correo" id="exampleFormControlInput1" placeholder="name@example.com">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="controls" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>                    
+          <button type="submit" class="btn btn-primary mb-3" id="boton-contacto" value="Enviar">Enviar</button>
         </section>
 
 <!------------------Footer-------------------->
@@ -176,7 +173,5 @@
        </div>
    </div>
    </footer>
-
-
 </body>
 </html>

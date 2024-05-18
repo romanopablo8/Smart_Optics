@@ -11,7 +11,15 @@ body {
 
 }
 
-
+#boton-contacto{
+   
+    float:center;
+    cursor:pointer;
+    width: 50%;
+    height: 35px;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
 
 .container {
     display: flex;
@@ -170,7 +178,11 @@ body {
     padding-top: 40px;
     padding-bottom:2px;
 }
-
+/*text area contacto */
+#exampleFormControlTextarea1{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
 .social-login {
     width: 100%;
     display: flex;
