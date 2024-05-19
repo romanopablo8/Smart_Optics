@@ -10,7 +10,20 @@ body {
     text-transform: capitalize;
 
 }
-
+#btn-iconito {
+    background-color: Black;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Darker background on mouse-over */
+  #btn-iconito:hover {
+    background-color: RoyalBlue;
+  }
+  
 #boton-contacto{
    
     float:center;
@@ -189,14 +202,27 @@ body {
     padding-bottom:2px;
 }
 /*text area contacto */
-#exampleFormControlTextarea1{
+#exampleFormControlTextarea1 #faqs{
     font-family: "Roboto", sans-serif;
     font-style: normal;
 }
+
+/* Barra de busqueda input*/
+#search{
+    width: 80px;
+    height: 35px;
+    font-size: 15px;
+    color:whitesmoke ;
+    --bs-btn-border-color: royalblue;
+
+}
+#search:hover {
+    background-color: RoyalBlue;
+    opacity: 80%;
+  }
 .social-login {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     cursor: pointer;
     padding-top: 35px;
 }
@@ -337,11 +363,31 @@ body {
     .container, .class_nav { 
         display: flex;
         flex-direction:column; 
+        #search {
+            width: 40px;
+            height: 35px;
+            font-size: 15px;
+            color:whitesmoke ;
+        }
+        #search:hover {
+            background-color: RoyalBlue;
+            opacity: 80%;
+          }
 }
 }
 
 @media (max-width:601px) {
     .footer-links, .footer-container {
+        #search {
+            width: 40px;
+            height: 35px;
+            font-size: 15px;
+            color:whitesmoke ;
+        }
+        #search:hover {
+            background-color: RoyalBlue;
+            opacity: 80%;
+          }
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
@@ -354,6 +400,11 @@ body {
 
 @media (max-width: 400px) {
     .footer-links, .footer-container {
+        #search{
+            width: 35px;
+            height: 35px;
+            font-size: 15px;
+        }
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -363,6 +414,7 @@ body {
         padding-left: 5px;
         padding-right: 5px;
         gap: 5px;
+
     }
     
     #redes-footer {
