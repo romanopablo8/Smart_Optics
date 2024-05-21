@@ -107,13 +107,14 @@
                     </div>
                 </div>
                 <p> or </p>
-                <form class="inputs-container"> 
-                    <input class="input" type="text" placeholder="username">
-                    <input class="input" type="text" placeholder="password">
+                <form class="inputs-container" onsubmit='return validar()'> 
+                    <input class="input" type="text" id="nombre"placeholder="username" required>
+                    <input class="input" type="text" id="password" placeholder="password 8 más caracteres" required>
                     <p style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif"> Forgot password ? <span class="span"> Click Here </span> </p>
-                    <button class="btn btn-primary mb-3"> login </button>    
+                    <button type="submit" class="btn btn-primary mb-3"> login </button>    
                     <p style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> Dont have Account? <span class="span"> Sign Up </span> </p>            
-                </form>
+                    <p id="mensajeError"></p>
+                  </form>
             </div>
             <img class="image-container"  src="./assets/img/login.svg" alt="LOGIN">
         </div>
@@ -183,5 +184,6 @@
      </div>
  </div>
  </footer>
+ <script src="./assets/js/myScript.js"></script>
 </body>
 </html>

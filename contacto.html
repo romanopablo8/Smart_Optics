@@ -97,18 +97,22 @@
         </nav>
     </header>
 
-        <section class="form-register">
+        <main>
+  
+        <form class="form-register" onsubmit='return mensajear()'>
           <h4>Contacto</h4>
-          <label for="inputPassword5" class="form-label">Nombre completo</label>
-          <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input class="controls" type="email" name="correo" id="exampleFormControlInput1" placeholder="name@example.com">
+          <label  class="form-label" >Nombre completo</label>
+          <input class="controls" type="text" name="nombres" id="nombre" placeholder="Ingrese su Nombre" required>
+          <label  class="form-label" >Email address</label>
+          <input class="controls" type="email" name="correo" id="exampleFormControlInput1" id="email" placeholder="name@example.com"required>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-            <textarea class="controls" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label class="form-label">Mensaje</label>
+            <textarea class="controls" id="exampleFormControlTextarea1"id="mensaje" rows="3" required></textarea>
           </div>                    
           <button type="submit" class="btn btn-primary mb-3" id="boton-contacto" value="Enviar">Enviar</button>
-        </section>
+          <p id="mensajeError"></p>
+        </form>
+      </main>
 
 <!------------------Footer-------------------->
 <footer>
@@ -175,5 +179,6 @@
        </div>
    </div>
    </footer>
+   <script src="./assets/js/myScript.js"></script>
 </body>
 </html>
