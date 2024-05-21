@@ -354,16 +354,44 @@ body {
     font-size: 16px;
   }
 
+/*iframe estilos */
 
+.map-estilo {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px; 
+    justify-content: space-between; 
+    padding-left:100px;
+    margin-top: 15px;
+    gap: 20px;
+}
+  
+
+.iframe-estilo {
+    text-align: center;
+}
 
 /*MEDIAS QUERIES*/
 
 
 @media (max-width:600px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        min-height: 100vh;
+
+    }
     .container, .class_nav { 
         display: flex;
-        flex-direction:column; 
-        #search {
+        flex-direction:column;
+        
+    }
+     
+    #search {
             width: 40px;
             height: 35px;
             font-size: 15px;
@@ -373,38 +401,101 @@ body {
             background-color: RoyalBlue;
             opacity: 80%;
           }
+
+.footer-links, .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    background-color: #1d1c1c;
+    padding: 80px;
+    gap: 30px;
 }
+    #search {
+        width: 80px;
+        height: 35px;
+        font-size: 15px;
+        color:whitesmoke ;
+    }
+    #search:hover {
+        background-color: RoyalBlue;
+        opacity: 80%;
+      }
+
+      #redes-footer {
+        width: 40%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-right: 40px;
+        justify-content: center;
+      }
+    
+      .map-estilo {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        padding: auto;
+        gap: 30px;
+    }
+    .test{
+        background-color: #00C3FF;
+    }
 }
 
-@media (max-width:601px) {
-    .footer-links, .footer-container {
-        #search {
-            width: 40px;
-            height: 35px;
-            font-size: 15px;
-            color:whitesmoke ;
-        }
-        #search:hover {
-            background-color: RoyalBlue;
-            opacity: 80%;
-          }
+@media (min-width:992px) {
+    #pie {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .footer-links, .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
         align-content: center;
-        background-color: #1d1c1c;
-        padding: 80px;
-        gap: 30px;
+        background-color: black;
+        width: 100%;
+    }
+     #search{
+            width: 75px;
+            height: 35px;
+            font-size: 15px;
+        }
+
+    #redes-footer {
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-left: 80px;
+    }
+    
+    .map-estilo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
+    .iframe-estilo {
+        text-align: center;
+    }
+
+     h5 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+        background-color: antiquewhite;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+     }
 }
-}
+
 
 @media (max-width: 400px) {
     .footer-links, .footer-container {
-        #search{
-            width: 35px;
-            height: 35px;
-            font-size: 15px;
-        }
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -414,12 +505,20 @@ body {
         padding-left: 5px;
         padding-right: 5px;
         gap: 5px;
+    }
+        #search{
+            width: 35px;
+            height: 35px;
+            font-size: 15px;
+        }
 
-    }
-    
     #redes-footer {
-      width: 80%;
-    }
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding-left: 70px;
+        
+        }
     
     .login-container {
         width: 80%;
@@ -451,13 +550,23 @@ body {
        }
     
        .footer-links .footer-container {
+        display: grid;
             grid-template-columns: 1fr;
+            margin: auto;
+            padding: auto;
+    
      }
        
      .image-container {
         display: none;
      }
-    
+
+     #search {
+        width: 80px;
+        height: 35px;
+        font-size: 15px;
+        color:whitesmoke ;
+}
 }
 
 /*MEDIAS QUERIES*/
