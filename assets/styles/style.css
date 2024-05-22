@@ -145,11 +145,11 @@ body {
 
 #redes-footer {
     display:flex ;
-    flex-direction: row; 
+    flex-direction: column; 
     align-content: center; 
     justify-content: space-between; 
-    width:40%;
-
+    width:45%;
+    padding-left: 55px;
 }
 
 /* Estilo Login */
@@ -378,6 +378,12 @@ body {
     text-align: center;
 }
 
+
+#h6-acerca {
+    text-align: center;
+    font-size: 20px;
+}
+
 /*MEDIAS QUERIES*/
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px)
@@ -439,7 +445,6 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         padding-right: 40px;
-        justify-content: center;
       }
     
       .map-estilo {
@@ -451,6 +456,10 @@ body {
     }
     .test{
         background-color: #00C3FF;
+    }
+
+    #titulo-redes {
+        text-align: center;
     }
 }
 
