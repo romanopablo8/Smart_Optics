@@ -26,12 +26,11 @@ body {
   
 #boton-contacto{
    
-    float:center;
     cursor:pointer;
-    width: 50%;
+    width: 40%;
     height: 35px;
-    font-size: 20px;
-    margin-bottom: 1%;
+   text-align: center;
+   margin-bottom: 10%;
 }
 
 .container {
@@ -295,7 +294,7 @@ body {
 /* REGISTRO */
 
 .form-register {
-    width: 50%;
+    width: 100%;
     background: #24303c;
     padding: 30px;
     margin-top:80px;
@@ -306,6 +305,7 @@ body {
     margin-bottom: 80px;
     margin-left: auto;
     margin-right: auto;
+  
   }
   
   .form-register h4 {
@@ -374,6 +374,13 @@ body {
 }
 
 /*MEDIAS QUERIES*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px)
+ { 
+    .direccion {
+        font-size: 1.2em;
+    }
+  }
 
 
 @media (max-width:600px) {
@@ -598,22 +605,15 @@ body {
     margin-top: 20px;
 }
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px)
- { 
-    .direccion {
-        font-size: 1.2em;
-    }
-  }
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {  }
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { }
-
-/* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
-
-/* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) { }
+#titulo-shop{
+    background-color: hsl(50, 47%, 93%);
+    
+}
+#shop-cat{
+    .libre-baskerville-regular-italic {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: italic;
+        background-color: #000;
+}
+}

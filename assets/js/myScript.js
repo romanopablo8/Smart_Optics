@@ -22,7 +22,7 @@ else {
   setTimeout(function() {w.close();}, 2000);
   let isBoss = confirm('Bienvenido');
   console.log(isBoss);
- window.location.href="https://romanopablo8.github.io/Smart_Optics/productos.html";
+ URL(location.href="https://romanopablo8.github.io/Smart_Optics/productos.html");
 return todo_correcto;
 
 }
@@ -58,10 +58,7 @@ if (password !== password1) {
   document.getElementById("mensajeError").textContent = "Las contraseñas no coinciden.";
   todo_correcto= false;
 }
-/*if(document.getElementById('password1').value.length <8 ){
-  mensajeError.innerText ='Las claves deben coincidir';
-  todo_correcto = false;
-}*/
+
 if (!terminos) {
   mensajeError.innerText = 'Debes aceptar los términos y condiciones.';
   todo_correcto = false;
