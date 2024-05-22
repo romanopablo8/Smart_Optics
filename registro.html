@@ -95,18 +95,22 @@
   <main>
     <form class="form-register"onsubmit='return registrar()'>
       <h4>Formulario Registro</h4>
-      <input class="controls" type="text" name="nombres" id="nombre" placeholder="Ingrese su Nombre" required>
-      <input class="controls" type="text" name="apellidos" id="apellido" placeholder="Ingrese su Apellido"required>
-      <input class="controls" type="email" name="correo" id="email" placeholder="Ingrese su Correo"required>
-      <input class="controls" type="password" name="correo" id="password" placeholder="Ingrese su Contraseña"required>
+      <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required maxlength="45">
+      <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido"required maxlength="45">
+      <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo"required>
+      <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña con 8 más caracteres"required>
+      <input class="controls" type="password" name="password1" id="password1" placeholder="confirme su Contraseña "required>
       <h1 style="padding-bottom: 10px;"> Genero:</h1>
-      <input type="radio" name="gender" value="Mujer" checked required> Mujer
-      <input type="radio" name="gender" value="Hombre"> Hombre
-      <input type="radio" name="gender" value="Otro"> Otro
-      
-      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+      <input type="radio" name="genero" value="Mujer" checked required> Mujer
+      <input type="radio" name="genero" value="Hombre"> Hombre
+      <input type="radio" name="genero" value="Otro"> Otro <br>
+      <input type="checkbox" id="terminos" name="terminos" required>
+      <label for="termino" class="labelCheck" > Acepto los términos y condiciones</label>
+      <br>
+      <p >Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
       
       <button class="botons" type="submit" value="Registrar">Registrar</button>
+      
       <p id="mensajeError"></p>
       <p><a href="./login.html">¿Ya tengo Cuenta?</a></p>
     </form>

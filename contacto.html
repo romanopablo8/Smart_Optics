@@ -102,15 +102,16 @@
         <form class="form-register" onsubmit='return mensajear()'>
           <h4>Contacto</h4>
           <label  class="form-label" >Nombre completo</label>
-          <input class="controls" type="text" name="nombres" id="nombre" placeholder="Ingrese su Nombre" required>
+          <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre completo" required maxlength="45">
           <label  class="form-label" >Email address</label>
-          <input class="controls" type="email" name="correo" id="exampleFormControlInput1" id="email" placeholder="name@example.com"required>
-          <div class="mb-3">
-            <label class="form-label">Mensaje</label>
-            <textarea class="controls" id="exampleFormControlTextarea1"id="mensaje" rows="3" required></textarea>
-          </div>                    
+          <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su Correo"required>
+         
+            <label class="form-label" >Mensaje</label>
+            <textarea class="controls" type="textarea" name="mensaje" id="mensaje"rows="3" placeholder="Escribir..."required maxlength="300"></textarea>
+                             
           <button type="submit" class="btn btn-primary mb-3" id="boton-contacto" value="Enviar">Enviar</button>
           <p id="mensajeError"></p>
+          
         </form>
       </main>
 
