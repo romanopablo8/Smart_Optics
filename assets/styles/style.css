@@ -358,25 +358,28 @@ body {
     margin: 16px 0;
     font-size: 16px;
   }
-
-/*iframe estilos */
-
-.map-estilo {
-    display: flex; 
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 15px; 
-    justify-content: space-between; 
-    padding-left:100px;
-    margin-top: 15px;
-    gap: 20px;
-}
-  
-
+  /*Sucursales.html*/
 .iframe-estilo {
     text-align: center;
-}
+  }
+.map-wrapper {
+    text-align: center; /* Centra el contenido dentro del div */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .map-iframe {
+    margin-bottom: 20px; /* Espacio entre cada mapa */
+  }
+
+  .map-wrapper iframe {
+    width: 350px;
+    height: 250px;
+    border: 0;
+    margin-bottom: 20px;
+  }
+/**--*/
 
 
 #h6-acerca {
@@ -589,9 +592,6 @@ body {
         color:whitesmoke ;
 }
 }
-
-/*MEDIAS QUERIES*/
-
 .map-container {
     position: relative;
     padding-bottom: 56.25%; /* Proporción 16:9: 9/16 = 0.5625 */
@@ -630,4 +630,18 @@ body {
         font-style: italic;
         background-color: #000;
 }
+}
+.img-logo {
+        background-image: url("/assets/img/LogosdeSmart-03.png");
+        width: 90px;
+        height: 90px;
+    
+}
+.img-banner{
+    cursor: zoom-out;
+    width: 100%; 
+    height: 60%;
+    background-color: hsl(53, 87%, 69%); 
+    display:inline-block;
+    background-color: hsl(53, 87%, 69%);
 }
