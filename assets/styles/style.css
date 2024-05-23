@@ -49,7 +49,7 @@ body {
 /*carousel y cards*/
 .carousel-section img,
 .card-section img {
-    height: 50vh;
+    height: 40vh;
     object-fit: cover;
 }
 
@@ -57,11 +57,7 @@ body {
     height: 30vh;
    
 }
-.card-carrito {
-    height: 20vh;
-    object-fit: cover; 
-   
-}
+
 /* footer*/
 #pie {
     width: 100%;
@@ -362,7 +358,8 @@ body {
 .iframe-estilo {
     text-align: center;
   }
-.map-wrapper {
+  /*Map-wraper*/
+.sucursal-mapwrap {
     text-align: center; /* Centra el contenido dentro del div */
     display: flex;
     flex-wrap: wrap;
@@ -373,7 +370,7 @@ body {
     margin-bottom: 20px; /* Espacio entre cada mapa */
   }
 
-  .map-wrapper iframe {
+  .sucursal-mapwrap iframe {
     width: 350px;
     height: 250px;
     border: 0;
@@ -394,6 +391,11 @@ body {
     .direccion {
         font-size: 1.2em;
     }
+    .card-carrito {
+        height: 30vh;
+        
+        object-fit: cover;
+     }
   }
 
 
@@ -465,6 +467,21 @@ body {
         text-align: center;
     }
 }
+@media (min-width: 768px) { 
+    #card-template{
+        height: 25vh;
+        object-fit: cover; 
+    }
+    .card-text{
+        height: 10vh;
+    }
+    #card-slit{
+        height: 40vh;
+        width:30%;
+        object-fit: cover; 
+    }
+      
+ }
 
 @media (min-width:992px) {
     #pie {
@@ -535,6 +552,22 @@ body {
             height: 35px;
             font-size: 15px;
         }
+        .card-carrito {
+            height: 55vh;
+            object-fit: cover;
+         }  
+        #card-template{
+            height: 35vh;
+            object-fit: cover;
+        }
+        .card{
+            height: 65vh;
+            object-fit: cover;
+        }
+        .card-text{
+            height:12vh;
+          
+        }
 
     #redes-footer {
         display: grid;
@@ -592,6 +625,24 @@ body {
         color:whitesmoke ;
 }
 }
+@media (min-width: 1200px) { 
+    .card-body{
+        height: 30vh;
+        width: 90%;
+    }
+
+    #card-template{
+        height: 40vh;
+        width:90%;
+        object-fit: cover; 
+    }
+    #card-slit{
+        height: 20vh;
+        width:60%;
+        object-fit: cover; 
+
+    }
+ }
 .map-container {
     position: relative;
     padding-bottom: 56.25%; /* Proporción 16:9: 9/16 = 0.5625 */
@@ -637,7 +688,7 @@ body {
         height: 90px;
     
 }
-.img-banner{
+.img-banner {
     cursor: zoom-out;
     width: 100%; 
     height: 60%;

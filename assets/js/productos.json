@@ -24,7 +24,7 @@
 		"precio": 45000,
 		"id": 4,
 		"title": "lente Negro",
-		"thumbnailUrl": "./assets/img/img1.jpg"
+		"thumbnailUrl": "./assets/img/gafas7.jpg"
 	},
 	
 
@@ -32,7 +32,7 @@
 		"precio": "25000",
         "id":5,
         "title":"Unisex Marron",
-        "thumbnailUrl":"./assets/img/img7.jpg"
+        "thumbnailUrl":"./assets/img/gafas6.jpg"
 	},
 	{
 		"precio": "35000",

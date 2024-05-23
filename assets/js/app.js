@@ -1,4 +1,5 @@
 
+    
     const cards = document.getElementById('cards')
     const templateCard = document.getElementById('template-card').content
     const items = document.getElementById('items')
@@ -7,7 +8,7 @@
     const templateCarrito = document.getElementById('template-carrito').content
     const fragment = document.createDocumentFragment()
     let carrito = {}
-    
+  
     
     document.addEventListener('DOMContentLoaded', ()=>{
         fetchData()
@@ -150,3 +151,71 @@
     
         e.stopPropagation()
     }
+
+    /*search */
+ /*   const search = document.getElementById('search')
+      let buscar = {}
+    
+const searchHandleKeyDown =(e)=>{
+    console.log(e.target.value.trim().toLowerCase())
+        
+}
+search.addEventListener('keyup',searchHandleKeyDown)
+
+const boton = document.getElementById('searchnavbar')
+const botonHandleClick =(f)=>{
+    f.preventDefault()
+    console.log('suerte')
+    console.log(f.target.value.trim().toLowerCase())
+}
+
+boton.addEventListener('click', botonHandleClick)
+document.addEventListener('DOMContentLoaded', ()=>{
+    fetchData()
+    if(localStorage.getItem('carrito')){
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        pintarCarrito()
+    }
+}
+)
+
+cards.addEventListener('click', e =>{
+    addCarrito(e)
+})
+
+items.addEventListener('click', e=>{
+    btnAccion(e)
+})
+
+const fetchData = async()=>{
+    try{
+        const res = await fetch('./assets/js/productos.json')
+        const data = await res.json()
+        pintarCard(data)
+
+    }catch(error){
+        console.log(error)
+    }
+}
+
+const search = data=>{
+    data.forEach(item => {
+        templateCard.querySelector('h5').textContent = item.title
+        templateCard.querySelector('p').textContent = item.precio
+        templateCard.querySelector('img').setAttribute('src', item.thumbnailUrl)
+        templateCard.querySelector('.btn-dark').dataset.id = item.id
+        const clone = templateCard.cloneNode(true)
+        fragment.appendChild(clone)
+    })
+    cards.appendChild(fragment)
+}
+
+const addSearch = e =>{
+    //console.log(e.target)
+    //console.log(e.target.classList.contains('btn-dark'))
+    if(e.target.classList.contains('btn-dark')){
+        setsearch(e.target.parentElement)
+    }
+
+e.stopPropagation()
+}*/
