@@ -7,6 +7,9 @@ el equipo de trabajo cuenta con 2 integrantes Fernandez Maria y Pablo Romano.
 Link de acceso:
 https://romanopablo8.github.io/Smart_Optics/
 
+Detalles de la Plantilla:
+https://docs.google.com/document/d/1n8hSQnCo_Zvj4C-GNDR6ZGB78nsokWso/edit?usp=sharing&ouid=113917689124092642608&rtpof=true&sd=true
+
 
 
 
