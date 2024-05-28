@@ -115,4 +115,3 @@ Git para subir el proyecto, agregar colaboradores y comenzar a
 trabajar en conjunto.
 utilizar Grid para maquetar el contenido principal (main) de las
 páginas del sitio.
-
