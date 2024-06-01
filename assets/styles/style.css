@@ -479,10 +479,40 @@ body {
         height: 25vh;
         object-fit: cover; 
     }
+    #card-template1{
+        height: 25vh;
+        object-fit: cover; 
+    }
+    #card-template2{
+        height: 25vh;
+        object-fit: cover; 
+    }
     .card-text{
         height: 10vh;
     }
+    #card-template3{
+        height: 25vh;
+        object-fit: cover; 
+    }
+    #card-template4{
+        height: 25vh;
+        object-fit: cover; 
+    }
+    #card-template6{
+        height: 25vh;
+        object-fit: cover; 
+    }
     #card-slit{
+        height: 40vh;
+        width:30%;
+        object-fit: cover; 
+    }
+    #card-slit1{
+        height: 40vh;
+        width:30%;
+        object-fit: cover; 
+    }
+    #card-slit2{
         height: 40vh;
         width:30%;
         object-fit: cover; 
@@ -567,6 +597,26 @@ body {
             height: 35vh;
             object-fit: cover;
         }
+        #card-template1{
+            height: 35vh;
+            object-fit: cover;
+        }
+        #card-template2{
+            height: 35vh;
+            object-fit: cover;
+        }
+        #card-template3{
+            height: 35vh;
+            object-fit: cover;
+        }
+        #card-template4{
+            height: 35vh;
+            object-fit: cover;
+        }
+        #card-template5{
+            height: 35vh;
+            object-fit: cover;
+        }
         .card{
             height: 65vh;
             object-fit: cover;
@@ -643,7 +693,44 @@ body {
         width:90%;
         object-fit: cover; 
     }
+    #card-template1{
+        height: 40vh;
+        width:90%;
+        object-fit: cover; 
+    }
+    #card-template2{
+        height: 40vh;
+        width:90%;
+        object-fit: cover; 
+    }
+    #card-template3{
+        height: 40vh;
+        width:90%;
+        object-fit: cover; 
+    }
+    #card-template4{
+        height: 40vh;
+        width:90%;
+        object-fit: cover; 
+    }
+    #card-template5{
+        height: 40vh;
+        width:90%;
+        object-fit: cover; 
+    }
     #card-slit{
+        height: 55vh;
+        width:60%;
+        object-fit: cover; 
+
+    }
+    #card-slit1{
+        height: 55vh;
+        width:60%;
+        object-fit: cover; 
+
+    }
+    #card-slit2{
         height: 55vh;
         width:60%;
         object-fit: cover; 
