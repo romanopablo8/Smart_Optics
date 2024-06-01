@@ -24,7 +24,7 @@ body {
     background-color: RoyalBlue;
   }
   
-#boton-contacto{
+#botonContacto{
    
     cursor:pointer;
     width: 40%;
@@ -197,9 +197,12 @@ body {
     padding-bottom:2px;
 }
 /*text area contacto */
-#exampleFormControlTextarea1 #faqs{
+#mensaje #faqs{
     font-family: "Roboto", sans-serif;
     font-style: normal;
+}
+#mensajeError{
+    color: coral;
 }
 
 /* Barra de busqueda input*/
